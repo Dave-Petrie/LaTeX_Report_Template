@@ -1,0 +1,48 @@
+\documentclass[11pt]{article} % Default font size is 12pt, it can be changed here
+
+\usepackage{geometry} % Required to change the page size to A4
+\geometry{a4paper} % Set the page size to be A4 as opposed to the default US Letter
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{fancyhdr} % Header package
+\usepackage{scrextend}
+\usepackage[utf8]{inputenc}
+\fancyhf{}
+\pagestyle{fancy} % For header package
+\graphicspath{ {images/} }
+\usepackage{lastpage}
+\pagestyle{fancy} 
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+\usepackage{float} % Allows putting an [H] in \begin{figure} to specify the exact location of the figure
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{url}
+\usepackage{notoccite} % Fixes ordering when referencing in figures
+\usepackage{listings}
+\usepackage{color}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0em}
+\renewcommand{\baselinestretch}{1.0}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman,english]{babel}
+\usepackage{tabularx}  % for 'tabularx' environment and 'X' column type
+\usepackage{ragged2e}  % for '\RaggedRight' macro (allows hyphenation)
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X} 
+\usepackage{booktabs}  % for \toprule, \midrule, and \bottomrule macros 
+
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+\linespread{1.2} % Line spacing
+
+\usepackage{enumitem}
+\setlist[enumerate]{label*=\arabic*.} % Allows sub-list numbering
+
+\setlength{\parskip}{10pt plus 1pt minus 1pt}
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\begin{document}
